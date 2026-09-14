@@ -12,7 +12,7 @@ export default function CustomerScreen() {
     c.name.toLowerCase().includes(query.toLowerCase()),
   );
   function addWalkIn() {
-    const id = String(Date.now());
+    const id = Date.now();
     const walkIn = { id, name: "Walk-in", balance: 0, lastPaid: "Never" };
     setCustomers([...customers, walkIn]);
   }
